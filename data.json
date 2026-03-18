@@ -1,10 +1,16 @@
-[
-  {
-    "name": "แฮร์รี่ พอตเตอร์",
-    "price": 350
-  },
-  {
-    "name": "เจ้าชายน้อย",
-    "price": 200
-  }
-]
+{
+  "categories": [
+    { "id": 1, "name": "แฟนตาซี", "description": "เวทมนตร์และโลกจินตนาการ" },
+    { "id": 2, "name": "ปรัชญา", "description": "การค้นหาความหมายของชีวิต" },
+    { "id": 3, "name": "พัฒนาตัวเอง", "description": "จิตวิทยาและความสำเร็จ" }
+  ],
+  "authors": [
+    { "id": 1, "name": "J.K. Rowling", "country": "สหราชอาณาจักร" },
+    { "id": 2, "name": "Antoine de Saint-Exupéry", "country": "ฝรั่งเศส" },
+    { "id": 3, "name": "Cal Newport", "country": "สหรัฐอเมริกา" }
+  ],
+  "books": [
+    { "name": "แฮร์รี่ พอตเตอร์", "price": 350, "stock": 15, "publishedYear": 1997, "CategoryId": 1, "AuthorId": 1 },
+    { "name": "เจ้าชายน้อย", "price": 200, "stock": 50, "publishedYear": 1943, "CategoryId": 2, "AuthorId": 2 }
+  ]
+}
