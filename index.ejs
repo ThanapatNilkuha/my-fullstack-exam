@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ระบบหลังร้าน</title>
+    <style>
+        body { font-family: sans-serif; background-color: #f4f7f6; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .container { background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 350px; text-align: center; }
+        h1 { color: #333; font-size: 24px; margin-bottom: 20px; }
+        input { width: 90%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; }
+        button { background-color: #28a745; color: white; border: none; padding: 12px 20px; width: 100%; border-radius: 5px; font-size: 16px; cursor: pointer; margin-top: 10px; }
+        a { display: block; margin-top: 15px; color: #007bff; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 เพิ่มข้อมูลหนังสือ</h1>
+        
+        <form action="/push" method="POST">
+            <input type="text" name="name" placeholder="ชื่อหนังสือ" required>
+            <input type="number" name="price" placeholder="ราคา (บาท)" required>
+            
+            <button type="submit">บันทึกข้อมูล (Push)</button>
+        </form>
+        <a href="/report">ดูรายงานหนังสือทั้งหมด ➔</a>
+    </div>
+</body>
+</html>

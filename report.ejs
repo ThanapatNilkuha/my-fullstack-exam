@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>รายงานข้อมูล</title>
+    <style>
+        body { font-family: sans-serif; background-color: #f4f7f6; padding: 40px; display: flex; flex-direction: column; align-items: center; }
+        .container { background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 80%; max-width: 800px; text-align: center; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 12px; border-bottom: 1px solid #ddd; text-align: left; }
+        th { background-color: #007bff; color: white; }
+        .btn-back { display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 รายงานหนังสือในคลัง</h1>
+        <table>
+            <tr>
+                <th>รหัส ID</th>
+                <th>ชื่อหนังสือ</th>
+                <th>ราคา (บาท)</th>
+            </tr>
+            <% items.forEach(function(item) { %>
+                <tr>
+                    <td><%= item.id %></td>
+                    <td><%= item.name %></td>
+                    <td><%= item.price %></td>
+                </tr>
+            <% }); %>
+        </table>
+        <a href="/" class="btn-back">⬅ กลับไปหน้าเพิ่มข้อมูล</a>
+    </div>
+</body>
+</html>
